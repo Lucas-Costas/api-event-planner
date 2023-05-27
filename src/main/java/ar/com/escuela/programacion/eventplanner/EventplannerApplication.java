@@ -35,6 +35,7 @@ public class EventplannerApplication {
         System.out.println();
         System.out.println("Si desea salir ingrese 0 + Enter");
         System.out.println("--");
+        System.out.println("Daniela");
     }
 
     private static String waitForUserInput() {
