@@ -1,0 +1,48 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.8'
+	id 'io.spring.dependency-management' version '1.1.0'
+	id 'groovy'
+	id 'java'
+}
+
+group = 'ar.com.escuela.programacion'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+[]
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.spockframework:spock-spring:2.0-groovy-3.0'
+	testImplementation 'org.spockframework:spock-core:2.0-groovy-3.0'
+	testCompileOnly "org.codehaus.groovy:groovy:3.0.9"
+}
+
+test {
+	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
+}
+
+springBoot {
+	buildInfo()
+}
+
+bootJar {
+	archiveFileName = 'app.jar'
+}
