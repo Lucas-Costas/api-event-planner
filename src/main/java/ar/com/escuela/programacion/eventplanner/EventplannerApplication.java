@@ -79,6 +79,7 @@ public class EventplannerApplication {
         System.out.println("Nati Chispita (PO)");
         System.out.println("Lucas Costas (PO-LLO)");
         System.out.println("Presione cualquier tecla para volver al menú.");
+        System.out.println("--");
     }
 
     private static void printInvalidOption() {
