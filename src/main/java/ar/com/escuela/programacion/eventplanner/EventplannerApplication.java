@@ -89,7 +89,6 @@ public class EventplannerApplication {
         System.out.println("- 02/02/2024: Cumpleaños 15 de Carol");
         System.out.println("- 05/05/2024: Bautismo de Steve");
         System.out.println("- 15/07/2024: Casamiento de Natasha y Bruce");
-        System.out.println("--");
         System.out.println("Presione cualquier tecla para volver al menú.");
         System.out.println("--");
     }
