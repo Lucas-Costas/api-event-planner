@@ -32,10 +32,10 @@ public class EventplannerApplication {
         System.out.println();
         System.out.println("A + Enter: Mostrar nombre de usuario");
         System.out.println("B + Enter: Mostrar fecha próximo evento");
+        System.out.println("C + Enter: Mostrar lista de invitados de siguiente evento");
         System.out.println();
         System.out.println("Si desea salir ingrese 0 + Enter");
         System.out.println("--");
-        System.out.println("Nati");
     }
 
     private static String waitForUserInput() {
@@ -49,6 +49,8 @@ public class EventplannerApplication {
             printOptionA();
         } else if ("B".equalsIgnoreCase(userInput)) {
             printOptionB();
+        } else if ("C".equalsIgnoreCase(userInput)) {
+            printOptionC();    
         } else {
             printInvalidOption();
         }
@@ -67,6 +69,17 @@ public class EventplannerApplication {
         System.out.println("Siguiente evento el 02/03/2024");
         System.out.println("--");
         System.out.println("Presione cualquier tecla para volver al menú.");
+    }
+
+    private static void printOptionC() {
+        System.out.println("--");
+        System.out.println("Invitados:");
+        System.out.println("Federico Saurio");
+        System.out.println("Nana Costas");
+        System.out.println("Nati Chispita (PO)");
+        System.out.println("Lucas Costas (PO-LLO)");
+        System.out.println("Presione cualquier tecla para volver al menú.");
+        System.out.println("--");
     }
 
     private static void printInvalidOption() {
