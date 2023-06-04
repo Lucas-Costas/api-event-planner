@@ -91,6 +91,7 @@ public class EventplannerApplication {
         System.out.println("- 15/07/2024: Casamiento de Natasha y Bruce");
         System.out.println("--");
         System.out.println("Presione cualquier tecla para volver al menú.");
+        System.out.println("--");
     }
 
     private static void printInvalidOption() {
