@@ -32,6 +32,7 @@ public class EventplannerApplication {
         System.out.println();
         System.out.println("A + Enter: Mostrar nombre de usuario");
         System.out.println("B + Enter: Mostrar fecha próximo evento");
+        System.out.println("D + Enter: Mostrar lista de futuros eventos");
         System.out.println();
         System.out.println("Si desea salir ingrese 0 + Enter");
         System.out.println("--");
@@ -49,6 +50,8 @@ public class EventplannerApplication {
             printOptionA();
         } else if ("B".equalsIgnoreCase(userInput)) {
             printOptionB();
+        } else if ("D".equalsIgnoreCase(userInput)) {
+            printOptionD();
         } else {
             printInvalidOption();
         }
@@ -65,6 +68,16 @@ public class EventplannerApplication {
     private static void printOptionB() {
         System.out.println("--");
         System.out.println("Siguiente evento el 02/03/2024");
+        System.out.println("--");
+        System.out.println("Presione cualquier tecla para volver al menú.");
+    }
+
+    private static void printOptionD() {
+        System.out.println("--");
+        System.out.println("Eventos:");
+        System.out.println("- 02/02/2024: Cumpleaños 15 de Carol");
+        System.out.println("- 05/05/2024: Bautismo de Steve");
+        System.out.println("- 15/07/2024: Casamiento de Natasha y Bruce");
         System.out.println("--");
         System.out.println("Presione cualquier tecla para volver al menú.");
     }
