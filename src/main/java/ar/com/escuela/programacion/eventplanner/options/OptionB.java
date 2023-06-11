@@ -14,4 +14,11 @@ public class OptionB {
         System.out.println("--");
         System.out.println("Presione cualquier tecla para volver al menú.");
     }
+
+    public String getNextEventDate() {
+        return this.nextEventDate;
+    }
+    public void setNextEventDate(String newDate){
+        this.nextEventDate = newDate;
+    }
 }

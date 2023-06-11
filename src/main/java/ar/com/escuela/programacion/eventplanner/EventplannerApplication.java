@@ -54,7 +54,7 @@ public class EventplannerApplication {
             optionA.printUserNameMessage();
         } else if ("B".equalsIgnoreCase(userInput)) {
             OptionB optionB = new OptionB();
-
+            optionB.setNextEventDate("29/12/2569");
             optionB.printNextEventDateMessage();
         } else if ("C".equalsIgnoreCase(userInput)) {
             printOptionC();
@@ -66,13 +66,6 @@ public class EventplannerApplication {
         waitForUserInput();
     }
 
-    /*
-    private static void printOptionB() {
-        System.out.println("--");
-        System.out.println("Siguiente evento el 02/03/2024");
-        System.out.println("--");
-        System.out.println("Presione cualquier tecla para volver al menú.");
-    }*/
     private static void printOptionC() {
         System.out.println("--");
         System.out.println("Invitados:");
