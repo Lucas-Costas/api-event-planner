@@ -1,6 +1,7 @@
 package ar.com.escuela.programacion.eventplanner;
 
 import ar.com.escuela.programacion.eventplanner.options.OptionA;
+import ar.com.escuela.programacion.eventplanner.options.OptionB;
 
 import java.util.Scanner;
 
@@ -52,7 +53,9 @@ public class EventplannerApplication {
             OptionA optionA = new OptionA("EventsMaster2023");
             optionA.printUserNameMessage();
         } else if ("B".equalsIgnoreCase(userInput)) {
-            printOptionB();
+            OptionB optionB = new OptionB();
+
+            optionB.printNextEventDateMessage();
         } else if ("C".equalsIgnoreCase(userInput)) {
             printOptionC();
         } else if ("D".equalsIgnoreCase(userInput)) {
@@ -63,12 +66,13 @@ public class EventplannerApplication {
         waitForUserInput();
     }
 
+    /*
     private static void printOptionB() {
         System.out.println("--");
         System.out.println("Siguiente evento el 02/03/2024");
         System.out.println("--");
         System.out.println("Presione cualquier tecla para volver al menú.");
-    }
+    }*/
     private static void printOptionC() {
         System.out.println("--");
         System.out.println("Invitados:");
