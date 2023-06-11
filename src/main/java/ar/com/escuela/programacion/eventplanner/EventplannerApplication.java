@@ -1,5 +1,7 @@
 package ar.com.escuela.programacion.eventplanner;
 
+import ar.com.escuela.programacion.eventplanner.options.OptionA;
+
 import java.util.Scanner;
 
 public class EventplannerApplication {
@@ -47,7 +49,8 @@ public class EventplannerApplication {
         if (EXIT_VALUE.equalsIgnoreCase(userInput)){
             return;
         } else if ("A".equalsIgnoreCase(userInput)) {
-            printOptionA();
+            OptionA optionA = new OptionA("EventsMaster2023");
+            optionA.printUserNameMessage();
         } else if ("B".equalsIgnoreCase(userInput)) {
             printOptionB();
         } else if ("C".equalsIgnoreCase(userInput)) {
@@ -58,13 +61,6 @@ public class EventplannerApplication {
             printInvalidOption();
         }
         waitForUserInput();
-    }
-
-    private static void printOptionA() {
-        System.out.println("--");
-        System.out.println("Usted es EventsMaster2023");
-        System.out.println("--");
-        System.out.println("Presione cualquier tecla para volver al menú.");
     }
 
     private static void printOptionB() {
