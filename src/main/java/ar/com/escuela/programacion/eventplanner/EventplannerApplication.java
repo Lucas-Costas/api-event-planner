@@ -2,6 +2,7 @@ package ar.com.escuela.programacion.eventplanner;
 
 import ar.com.escuela.programacion.eventplanner.options.OptionA;
 import ar.com.escuela.programacion.eventplanner.options.OptionB;
+import ar.com.escuela.programacion.eventplanner.options.OptionC;
 
 import java.util.Scanner;
 
@@ -57,7 +58,8 @@ public class EventplannerApplication {
             optionB.setNextEventDate("29/12/2569");
             optionB.printNextEventDateMessage();
         } else if ("C".equalsIgnoreCase(userInput)) {
-            printOptionC();
+            OptionC optionC = new OptionC("Federico Saurio", "Nana Costas", "Nati Chispita (PO)", "Lucas Costas (PO-LLO)");
+            optionC.printNextEventGuestListMessage();
         } else if ("D".equalsIgnoreCase(userInput)) {
             printOptionD();
         } else {

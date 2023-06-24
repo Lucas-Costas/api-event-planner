@@ -6,11 +6,11 @@ public class OptionC {
     private String thirdGuest;
     private String fourthGuest;
 
-    public OptionC(String firstGuest, String secondGuest, String thirdGuest, String fourthGuest){
-        this.firstGuest = "Federico Saurio";
-        this.secondGuest = "Nana Costas";
-        this.thirdGuest = "Nati Chispita (PO)";
-        this.fourthGuest = "Lucas Costas (PO-LLO)";
+    public OptionC(String firstGuestNombre, String secondGuestNombre, String thirdGuestNombre, String fourthGuestNombre){
+        this.firstGuest = firstGuestNombre;
+        this.secondGuest = secondGuestNombre;
+        this.thirdGuest = thirdGuestNombre;
+        this.fourthGuest = fourthGuestNombre;
     }
 
     public String getFirstGuest() {
