@@ -6,11 +6,11 @@ public class OptionC {
     private String thirdGuest;
     private String fourthGuest;
 
-    public OptionC(String firstGuestNombre, String secondGuestNombre, String thirdGuestNombre, String fourthGuestNombre){
-        this.firstGuest = firstGuestNombre;
-        this.secondGuest = secondGuestNombre;
-        this.thirdGuest = thirdGuestNombre;
-        this.fourthGuest = fourthGuestNombre;
+    public OptionC(String firstGuestName, String secondGuestName, String thirdGuestName, String fourthGuestName){
+        this.firstGuest = firstGuestName;
+        this.secondGuest = secondGuestName;
+        this.thirdGuest = thirdGuestName;
+        this.fourthGuest = fourthGuestName;
     }
 
     public String getFirstGuest() {
@@ -47,9 +47,9 @@ public class OptionC {
 
     public void printNextEventGuestListMessage(){
         System.out.println("Los invitados al evento son:");
-        System.out.println("- " + getFirstGuest());
-        System.out.println("- " + getSecondGuest());
-        System.out.println("- " + getThirdGuest());
-        System.out.println("- " + getFourthGuest());
+        System.out.println("- " + this.firstGuest);
+        System.out.println("- " + this.secondGuest);
+        System.out.println("- " + this.thirdGuest);
+        System.out.println("- " + this.fourthGuest);
     }
 }

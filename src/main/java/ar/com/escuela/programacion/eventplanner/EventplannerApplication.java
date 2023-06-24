@@ -68,16 +68,6 @@ public class EventplannerApplication {
         waitForUserInput();
     }
 
-    private static void printOptionC() {
-        System.out.println("--");
-        System.out.println("Invitados:");
-        System.out.println("Federico Saurio");
-        System.out.println("Nana Costas");
-        System.out.println("Nati Chispita (PO)");
-        System.out.println("Lucas Costas (PO-LLO)");
-        System.out.println("Presione cualquier tecla para volver al menú.");
-        System.out.println("--");
-    }
     private static void printOptionD() {
         System.out.println("--");
         System.out.println("Eventos:");
