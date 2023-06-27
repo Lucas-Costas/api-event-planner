@@ -1,5 +1,9 @@
 package ar.com.escuela.programacion.eventplanner;
 
+import ar.com.escuela.programacion.eventplanner.options.OptionA;
+import ar.com.escuela.programacion.eventplanner.options.OptionB;
+import ar.com.escuela.programacion.eventplanner.options.OptionC;
+
 import java.util.Scanner;
 
 public class EventplannerApplication {
@@ -47,11 +51,15 @@ public class EventplannerApplication {
         if (EXIT_VALUE.equalsIgnoreCase(userInput)){
             return;
         } else if ("A".equalsIgnoreCase(userInput)) {
-            printOptionA();
+            OptionA optionA = new OptionA("EventsMaster2023");
+            optionA.printUserNameMessage();
         } else if ("B".equalsIgnoreCase(userInput)) {
-            printOptionB();
+            OptionB optionB = new OptionB();
+            optionB.setNextEventDate("29/12/2569");
+            optionB.printNextEventDateMessage();
         } else if ("C".equalsIgnoreCase(userInput)) {
-            printOptionC();
+            OptionC optionC = new OptionC("Federico Saurio", "Nana Costas", "Nati Chispita (PO)", "Lucas Costas (PO-LLO)");
+            optionC.printNextEventGuestListMessage();
         } else if ("D".equalsIgnoreCase(userInput)) {
             printOptionD();
         } else {
@@ -60,29 +68,6 @@ public class EventplannerApplication {
         waitForUserInput();
     }
 
-    private static void printOptionA() {
-        System.out.println("--");
-        System.out.println("Usted es EventsMaster2023");
-        System.out.println("--");
-        System.out.println("Presione cualquier tecla para volver al menú.");
-    }
-
-    private static void printOptionB() {
-        System.out.println("--");
-        System.out.println("Siguiente evento el 02/03/2024");
-        System.out.println("--");
-        System.out.println("Presione cualquier tecla para volver al menú.");
-    }
-    private static void printOptionC() {
-        System.out.println("--");
-        System.out.println("Invitados:");
-        System.out.println("Federico Saurio");
-        System.out.println("Nana Costas");
-        System.out.println("Nati Chispita (PO)");
-        System.out.println("Lucas Costas (PO-LLO)");
-        System.out.println("Presione cualquier tecla para volver al menú.");
-        System.out.println("--");
-    }
     private static void printOptionD() {
         System.out.println("--");
         System.out.println("Eventos:");
