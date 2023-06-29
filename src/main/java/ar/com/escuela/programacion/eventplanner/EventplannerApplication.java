@@ -2,6 +2,7 @@ package ar.com.escuela.programacion.eventplanner;
 
 import ar.com.escuela.programacion.eventplanner.options.OptionA;
 import ar.com.escuela.programacion.eventplanner.options.OptionB;
+import ar.com.escuela.programacion.eventplanner.options.OptionD;
 
 import java.util.Scanner;
 
@@ -59,7 +60,8 @@ public class EventplannerApplication {
         } else if ("C".equalsIgnoreCase(userInput)) {
             printOptionC();
         } else if ("D".equalsIgnoreCase(userInput)) {
-            printOptionD();
+            OptionD optionD = new OptionD();
+            optionD.printNextEventsListMessage();
         } else {
             printInvalidOption();
         }
@@ -73,15 +75,6 @@ public class EventplannerApplication {
         System.out.println("Nana Costas");
         System.out.println("Nati Chispita (PO)");
         System.out.println("Lucas Costas (PO-LLO)");
-        System.out.println("Presione cualquier tecla para volver al menú.");
-        System.out.println("--");
-    }
-    private static void printOptionD() {
-        System.out.println("--");
-        System.out.println("Eventos:");
-        System.out.println("- 02/02/2024: Cumpleaños 15 de Carol");
-        System.out.println("- 05/05/2024: Bautismo de Steve");
-        System.out.println("- 15/07/2024: Casamiento de Natasha y Bruce");
         System.out.println("Presione cualquier tecla para volver al menú.");
         System.out.println("--");
     }
