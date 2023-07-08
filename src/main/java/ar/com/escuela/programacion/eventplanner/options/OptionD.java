@@ -6,46 +6,38 @@ public class OptionD {
     private String secondEvent;
     private String thirdEvent;
 
-    public OptionD(){
-        firstEvent = "02/02/2024: Cumpleaños 15 de Carol";
-        secondEvent = "05/05/2024: Bautismo de Steve";
-        thirdEvent = "15/07/2024: Casamiento de Natasha y Bruce";
+    public void setFirstEvent(String event) {
+        firstEvent = event;
+    }
+
+    public void setSecondEvent(String event) {
+        secondEvent = event;
+    }
+
+    public void setThirdEvent(String event) {
+        thirdEvent = event;
     }
 
     public String getFirstEvent() {
-
         return firstEvent;
     }
 
-    public void setFirstEvent(String firstEvent) {
-
-        this.firstEvent = firstEvent;
-    }
-
     public String getSecondEvent() {
-
         return secondEvent;
     }
 
-    public void setSecondEvent(String secondEvent) {
-
-        this.secondEvent = secondEvent;
-    }
-
     public String getThirdEvent() {
-
         return thirdEvent;
     }
 
-    public void setThirdEvent(String thirdEvent) {
-
-        this.thirdEvent = thirdEvent;
-    }
-
     public void printNextEventsListMessage() {
-        System.out.println(getFirstEvent());
-        System.out.println(getSecondEvent());
-        System.out.println(getThirdEvent());
+        System.out.println("--");
+        System.out.println("Eventos:");
+        System.out.println("-" + getFirstEvent());
+        System.out.println("-" + getSecondEvent());
+        System.out.println("-" + getThirdEvent());
+        System.out.println("Presione cualquier tecla para volver al menú.");
+        System.out.println("--");
     }
 
 }

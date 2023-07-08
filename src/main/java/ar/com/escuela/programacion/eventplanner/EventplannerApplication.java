@@ -61,6 +61,10 @@ public class EventplannerApplication {
             printOptionC();
         } else if ("D".equalsIgnoreCase(userInput)) {
             OptionD optionD = new OptionD();
+            optionD.setFirstEvent("02/02/2024: Cumpleaños 15 de Carol");
+            optionD.setSecondEvent("05/05/2024: Bautismo de Steve");
+            optionD.setThirdEvent("15/07/2024: Casamiento de Natasha y Bruce");
+
             optionD.printNextEventsListMessage();
         } else {
             printInvalidOption();
