@@ -3,6 +3,7 @@ package ar.com.escuela.programacion.eventplanner;
 import ar.com.escuela.programacion.eventplanner.options.OptionA;
 import ar.com.escuela.programacion.eventplanner.options.OptionB;
 import ar.com.escuela.programacion.eventplanner.options.OptionC;
+import ar.com.escuela.programacion.eventplanner.options.OptionD;
 
 import java.util.Scanner;
 
@@ -61,23 +62,17 @@ public class EventplannerApplication {
             OptionC optionC = new OptionC("Federico Saurio", "Nana Costas", "Nati Chispita (PO)", "Lucas Costas (PO-LLO)");
             optionC.printNextEventGuestListMessage();
         } else if ("D".equalsIgnoreCase(userInput)) {
-            printOptionD();
+            OptionD optionD = new OptionD();
+            optionD.setFirstEvent("02/02/2024: Cumpleaños 15 de Carol");
+            optionD.setSecondEvent("05/05/2024: Bautismo de Steve");
+            optionD.setThirdEvent("15/07/2024: Casamiento de Natasha y Bruce");
+
+            optionD.printNextEventsListMessage();
         } else {
             printInvalidOption();
         }
         waitForUserInput();
     }
-
-    private static void printOptionD() {
-        System.out.println("--");
-        System.out.println("Eventos:");
-        System.out.println("- 02/02/2024: Cumpleaños 15 de Carol");
-        System.out.println("- 05/05/2024: Bautismo de Steve");
-        System.out.println("- 15/07/2024: Casamiento de Natasha y Bruce");
-        System.out.println("Presione cualquier tecla para volver al menú.");
-        System.out.println("--");
-    }
-
     private static void printInvalidOption() {
         System.out.println("--");
         System.out.println("La opción ingresada es incorrecta");
