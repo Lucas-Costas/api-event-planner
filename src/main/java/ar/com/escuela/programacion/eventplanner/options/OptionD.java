@@ -33,9 +33,9 @@ public class OptionD {
     public void printNextEventsListMessage() {
         System.out.println("--");
         System.out.println("Eventos:");
-        System.out.println("-" + getFirstEvent());
-        System.out.println("-" + getSecondEvent());
-        System.out.println("-" + getThirdEvent());
+        System.out.println("-" + this.firstEvent);
+        System.out.println("-" + this.secondEvent);
+        System.out.println("-" + this.thirdEvent);
         System.out.println("Presione cualquier tecla para volver al menú.");
         System.out.println("--");
     }
